@@ -175,8 +175,7 @@ def test_atomic_convolution_module_eval_dropout():
                              size=(batch_size, num_atoms, max_num_neighbors))
         nbrs_z = torch.randint(1,
                                10,
-                               size=(batch_size, num_atoms,
-                                     max_num_neighbors))
+                               size=(batch_size, num_atoms, max_num_neighbors))
         return coords, nbrs, nbrs_z
 
     frag1 = _frag(frag1_num_atoms)
